@@ -588,7 +588,7 @@ footer .container ul{
 
 }
 
-@media (max-width: 440px){
+@media (max-width: 360px){
     .resultados .resultados-numeros{
         flex-direction: column;
     }
@@ -599,7 +599,51 @@ footer .container ul{
 
 
 
-}
+    
+       
+    
+    
+        
+    
+        
+    
+    
+    
+    
+    
+            
+            
+           
+           
+        .resultados .resultados-text,
+        .resultados .resultados-numeros{
+            width: 100%;
+            text-align: center;
+           
+        }
+    
+        .resultados .container{
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .newsletter .box-newsletter input-box{
+            width: 150%;
+            margin-top: 200px;
+            margin-left: 200px;
+            
+        
+            
+            
+    
+
+    
+       
+    
+    
+    }
+
+
 
 
 

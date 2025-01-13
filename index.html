@@ -194,14 +194,28 @@
             <p>Me envie uma Mensagem por Email</p>
 
 
-            <form>
-                <input type="text" placeholder="Seu nome">
-                <input type="text" placeholder="Seu Telefone">
-                <input type="text" placeholder="Seu Email">
-                <input type="tex" placeholder="Sua Mensagem">
+            <form action="https://api.staticforms.xyz/submit" method="post">
 
-                <button>Enviar</button>
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Nome completo" autocomplete="off" required>
+                    <input type="email" name="email" placeholder="E-mail" autocomplete="off" required>
+                
+            
+                    <input type="number" name="phone" placeholder="Num telefone" required>
+                    <input type="text" name="subject" placeholder="Assunto" required>
+                    
+                </div>
+            
+                
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            
+                <input type="hidden" name="accessKey" value="24f77ba9-e8db-450f-9ced-c10db82b2244">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/Obrigado.html">
+            
+              
+            
             </form>
+            
         </div>
     </div>
 </section>
