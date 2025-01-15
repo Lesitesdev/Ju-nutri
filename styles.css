@@ -460,7 +460,7 @@ footer .container a {
 /*Responsivo*/
 
 
-@media (max-width: 960px){
+@media (max-width: 360px){
 
     .menu-icon {
         display: block;
