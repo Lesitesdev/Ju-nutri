@@ -1,9 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-*{
-
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,40 +8,31 @@
     list-style: none;
 }
 
-body{
+body {
     font-family: 'poppins', sans-serif;
-    
 }
 
-
-:root{
-
-    --verde-escuro:#14424b;
-    --verde:#2f9364;
+:root {
+    --verde-escuro: #14424b;
+    --verde: #2f9364;
     --orange: #ff7c37;
     --degrade-btn: linear-gradient(#fe9611, #ff5c00);
-    --color-p:#a1a1a1;
-    --color-p-2:#868585;
+    --color-p: #a1a1a1;
+    --color-p-2: #868585;
 }
 
-
-.background-verde{
-
-    background:var(--verde-escuro)
+.background-verde {
+    background: var(--verde-escuro);
 }
 
-
-section{
-    padding: 2.7rem 0 ;
-
-
+section {
+    padding: 2.7rem 0;
 }
 
-.container{
+.container {
     max-width: 1440px;
     padding: 0 5%;
     margin: 0 auto;
-
 }
 
 .btn-gradient {
@@ -55,17 +43,14 @@ section{
     background-image: var(--degrade-btn);
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-
-
-
 }
 
-.logo a{
+.logo a {
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -74,10 +59,9 @@ nav{
 .ul {
     display: flex;
     align-items: center;
-
 }
 
-.ul li{
+.ul li {
     margin: 0 35px;
     font-size: 15px;
 }
@@ -86,64 +70,49 @@ nav{
     color: white;
 }
 
-
-
-/*main*/
-
-
-main .container{
-
+/* Main */
+main .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 30px;
-
 }
 
-.main-text{
+.main-text {
     width: 50%;
     color: white;
 }
 
-.main-text h1{
+.main-text h1 {
     font-size: 4.5rem;
 }
 
-.main-text div{
+.main-text div {
     display: flex;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
-
 }
 
-.main-img{
+.main-img {
     width: 50%;
     margin-right: 50px;
-   
-   }
+}
 
-   .main-img img{
+.main-img img {
     width: 100%;
     margin-left: 15px;
-    
-   
-   }
+}
 
-
-/* menu icon*/
-
-
+/* Menu Icon */
 .menu-icon {
     display: none;
     position: relative;
     z-index: 10;
-
 }
 
-/*Resultados*/
-
-.resultados{
+/* Resultados */
+.resultados {
     background: var(--orange);
 }
 
@@ -158,28 +127,24 @@ main .container{
     font-size: 1.6rem;
     font-weight: 600;
     width: 50%;
-    
 }
 
-.resultados .resultados-numeros{
+.resultados .resultados-numeros {
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-
 }
 
 .resultados .resultados-numeros p {
-    text-align: cener;
+    text-align: center;
     margin: 0 30px;
     font-size: 20px;
-
 }
 
-.resultados .resultados-numeros p span{
+.resultados .resultados-numeros p span {
     font-size: 30px;
     font-weight: 600;
-
 }
 
 .diferenciais .container {
@@ -188,139 +153,119 @@ main .container{
     margin: 30px auto;
 }
 
-.diferenciais .card{
+.diferenciais .card {
     width: 30%;
     cursor: pointer;
     padding: 30px;
     background-color: var(--color-p);
     border-radius: 15px;
-   
-    
-    
     transition: 0.2s;
 }
 
-.diferenciais .card:hover{
-    
+.diferenciais .card:hover {
     box-shadow: 0px 10px 67px 8px;
-
 }
-
 
 .diferenciais .card img {
     width: 40px;
 }
 
-.diferenciais .card .titulo{
-    margin: 13px 0 ;
-font-weight: 600;
+.diferenciais .card .titulo {
+    margin: 13px 0;
+    font-weight: 600;
 }
 
-
-
-/*section casa */
-
-
-.casa .container{
+/* Casa Section */
+.casa .container {
     display: flex;
     align-items: center;
 }
 
-.casa .casa-img
-{
+.casa .casa-img {
     width: 50%;
 }
 
-.casa .casa-img img{
+.casa .casa-img img {
     width: 100%;
     border-radius: 10px;
 }
 
-.casa .casa-text{
+.casa .casa-text {
     width: 50%;
     padding-left: 90px;
 }
 
-.casa .casa-text h2{
+.casa .casa-text h2 {
     font-size: 2.5em;
 }
 
 .casa .casa-text p {
     margin: 20px 0;
-    color:var(--color-p)
+    color: var(--color-p);
 }
 
-.casa .casa-text p b{
+.casa .casa-text p b {
     color: black;
     font-size: 25px;
 }
 
-
-.atendimentos .azul{
-    font-size:24px ;
+.atendimentos .azul {
+    font-size: 24px;
     font-weight: 600;
     color: #0060f0;
 }
 
-.atendimentos h2{
+.atendimentos h2 {
     font-size: 2.5rem;
 }
 
-.atendimentos .cards{
+.atendimentos .cards {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-
 
 .atendimentos .cards .card-item {
     width: 30%;
     text-align: center;
     padding: 30px 0;
     border-radius: 20px;
-    box-shadow: 0px 35px 97px -15px rgba(0, 0,0,08);
-    
+    box-shadow: 0px 35px 97px -15px rgba(0, 0, 0, 0.08);
 }
 
-.atendimentos .cards .img{
+.atendimentos .cards .img {
     width: 80px;
-    
-
 }
 
-.atendimentos .cards .local-casa{
+.atendimentos .cards .local-casa {
     margin: 5px 0;
-    color: var(--color-p)
+    color: var(--color-p);
 }
 
-.atendimentos .cards .nome-casa{
+.atendimentos .cards .nome-casa {
     font-size: 30px;
     font-weight: 500;
-
 }
 
-.atendimentos .cards .contato{
-    margin-bottom:20px ;
+.atendimentos .cards .contato {
+    margin-bottom: 20px;
     color: var(--color-p-2);
 }
 
-.atendimentos .cards button{
+.atendimentos .cards button {
     padding: 10px 20px;
     color: white;
     background-color: var(--orange);
     border: none;
 }
 
-
-/*contatos*/
-
-.newsletter{
+/* Contatos */
+.newsletter {
     margin-top: 50px;
     background-color: var(--verde);
-
 }
 
-.newsletter .box-newsletter{
+.newsletter .box-newsletter {
     text-align: center;
     background-image: url('/img/img\ contatos.jpg');
     padding: 100px;
@@ -328,27 +273,22 @@ font-weight: 600;
     background-size: cover;
     background-position: center;
     border-radius: 15px;
-   
 }
 
-.newsletter .box-newsletter h2{
+.newsletter .box-newsletter h2 {
     font-size: 2.5rem;
-
 }
 
 .newsletter .box-newsletter p {
     margin: 13px 0;
     font-size: 1.5rem;
-
 }
 
-.newsletter .box-newsletter form{
-    
+.newsletter .box-newsletter form {
     padding-left: 400px;
-
 }
 
-.newsletter .box-newsletter textarea{
+.newsletter .box-newsletter textarea {
     width: 35%;
     padding: 15px;
     border-radius: 15px;
@@ -356,16 +296,12 @@ font-weight: 600;
     outline: none;
     color: #00000098;
     display: flex;
-    background-color:#faefda ;
-    display: flex;
+    background-color: #faefda;
     margin-top: 10px;
     height: 60px;
 }
 
-
-
 .newsletter .box-newsletter input {
-    
     width: 35%;
     padding: 15px;
     border-radius: 15px;
@@ -373,44 +309,35 @@ font-weight: 600;
     outline: none;
     color: #00000098;
     display: flex;
-    background-color:#faefda ;
-    display: flex;
+    background-color: #faefda;
     margin-top: 10px;
     height: 4rem;
-    }
+}
 
 .newsletter .box-newsletter button {
-    
     font-size: 1rem;
     border: none;
-    outline:none;
+    outline: none;
     padding: 2rem;
     border-radius: 1rem;
     color: white;
     background-color: var(--orange);
     cursor: pointer;
-    margin-right:25rem;
+    margin-right: 25rem;
     margin-top: 3rem;
-
-
 }
 
-
-/*footer*/
-
-footer{
-    
+/* Footer */
+footer {
     background-color: var(--verde-escuro);
 }
 
-
-footer .container{
-    
+footer .container {
     display: flex;
     color: white;
 }
 
-footer .container ul{
+footer .container ul {
     margin-top: 20px;
     width: 25%;
 }
@@ -420,15 +347,15 @@ footer .container h3 {
     font-weight: 600;
 }
 
-footer .container .redes-sociais img{
+footer .container .redes-sociais img {
     margin-right: 10px;
 }
 
 footer .container ul > p {
-    margin-bottom: 40px ;
+    margin-bottom: 40px;
 }
 
-footer .container li{
+footer .container li {
     margin: 10px 0;
 }
 
@@ -436,35 +363,100 @@ footer .container a {
     color: white;
 }
 
+/* Responsivo */
 
 
 
+@media (max-width: 360px) {
+    body,
+    html {
+        width: 100%;
+        overflow-x: hidden; /* Corrige conteúdo que sai da tela */
+    }
+    .resultados .resultados-numeros {
+        flex-direction: column;
+    }
+    main .container .main-text h1 {
+        font-size: 3rem;
+    }
+    .resultados .resultados-text,
+    .resultados .resultados-numeros {
+        width: 100%;
+        text-align: center;
+    }
+    .resultados .container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .newsletter .box-newsletter {
+        display: flex;
+        flex-direction: column;  /* Mantém os itens empilhados */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        justify-content: flex-start; /* Mantém os itens no topo */
+        padding: 1rem;
+    }
+    
 
 
 
+    .newsletter .box-newsletter textarea,
+    .newsletter .box-newsletter input {
+        width: 90%; /* Ajusta largura responsiva */
+        margin: 1rem auto;
+    }
+    .newsletter .box-newsletter button {
+        text-align: center;
+        margin: 3rem;
+        padding: 0 ;         /* Ajusta o espaço interno (topo/bottom / left/right) */
+        width: 30rem;                /* Largura fixa */
+        height: 6rem;                /* Altura fixa para garantir consistência */
+        font-size: 1rem;           /* Ajusta o tamanho da fonte */
+        line-height: 1;            /* Ajusta o espaço vertical entre as linhas (se houver mais de uma linha) */
+        text-align: center;          /* Centraliza o texto horizontalmente */
+        border-radius: 1rem;
+        color: white;
+        background-color: var(--orange);
+        cursor: pointer;
+    }
+    
+
+
+    .newsletter .box-newsletter form {
+        padding: 0; /* Remove padding fixo */
+        text-align: center; /* Centraliza o formulário */
+    }
+    .newsletter .box-newsletter textarea {
+        width: 95%; /* Ajuste responsivo */
+        max-width: 500px; /* Limita a largura máxima */
+        padding: 15px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        color: #00000098;
+        background-color: #faefda;
+        margin: 10px auto; /* Centraliza na tela */
+        height: 60px;
+    }
+    .newsletter .box-newsletter input {
+        width: 90%;               /* Ajuste responsivo */
+        max-width: 500px;         /* Limita a largura máxima */
+        padding: 15px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        color: #00000098;
+        background-color: #faefda;
+        margin: 10px 0;            /* Remove o "auto" para não centralizar */
+        height: 40px;
+    }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Responsivo*/
-
-
-@media (max-width: 960px)
-
-{
-    .menu-icon {display: block;}
+@media (max-width: 1024px) {
+    .menu-icon {
+        display: block;
+    }
     .ul {
         position: fixed;
         background: var(--verde-escuro);
@@ -480,40 +472,60 @@ footer .container a {
         font-size: 2rem;
         margin: 2rem 0;
     }
-    ul.ativo {left: 0;}
-    main .container {flex-direction: column;}
+    ul.ativo {
+        left: 0;
+    }
+    main .container {
+        flex-direction: column;
+    }
     main .container .main-img,
     main .container .main-text {
         width: 100%;
         text-align: center;
     }
-    main .container .main-text h1 {font-size: 4rem;}
-    main .container .main-text div {justify-content: center;}
-    .resultados .container {flex-direction: column;}
+    main .container .main-text h1 {
+        font-size: 4rem;
+    }
+    main .container .main-text div {
+        justify-content: center;
+    }
+    .resultados .container {
+        flex-direction: column;
+    }
     .resultados .resultados-text,
     .resultados .resultados-numeros {
         width: 100%;
         text-align: center;
     }
-    .resultados-numero {margin-top: 3rem;}
-    .diferenciais .container {flex-direction: column;}
+    .resultados-numero {
+        margin-top: 3rem;
+    }
+    .diferenciais .container {
+        flex-direction: column;
+    }
     .diferenciais .card {
         width: 100%;
         margin-bottom: 2rem;
     }
-    .casa .container {flex-direction: column-reverse;}
+    .casa .container {
+        flex-direction: column-reverse;
+    }
     .casa .casa-text,
     .casa .casa-img {
         width: 100%;
         text-align: center;
         padding: 0;
     }
-    .atendimentos .cards {flex-direction: column;}
+    .atendimentos .cards {
+        flex-direction: column;
+    }
     .atendimentos .cards .card-item {
         width: 100%;
         margin-top: 5rem;
     }
-    .newsletter .box-newsletter h2 {font-size: 2rem;}
+    .newsletter .box-newsletter h2 {
+        font-size: 2rem;
+    }
     .newsletter .box-newsletter input {
         width: 90%;
         margin-top: 2rem;
@@ -527,84 +539,12 @@ footer .container a {
         margin-top: 2rem;
         margin-left: 0;
     }
-    footer .container {flex-direction: column;}
+    footer .container {
+        flex-direction: column;
+    }
     footer .container ul {
         width: 100%;
         margin-bottom: 3rem;
     }
-}
-@media (max-width: 360px) {
-    body, html {
-        width: 100%;
-        overflow-x: hidden; /* Corrige conteúdo que sai da tela */
-    }
-
-    .resultados .resultados-numeros {
-        flex-direction: column;
-    }
-
-    main .container .main-text h1 {
-        font-size: 3rem;
-    }
-
-    .resultados .resultados-text,
-    .resultados .resultados-numeros {
-        width: 100%;
-        text-align: center;
-    }
-
-    .resultados .container {
-        flex-direction: column;
-        gap: 4rem;
-    }
-
-    .newsletter .box-newsletter {
-        display: block;
-        padding: 2rem; /* Ajusta para caber na tela */
-    }
-
-    .newsletter .box-newsletter textarea,
-    .newsletter .box-newsletter input {
-        width: 90%; /* Ajusta largura responsiva */
-        margin: 1rem auto;
-    }
-
-    .newsletter .box-newsletter button {
-        margin: 0 auto;
-        width: 90%; /* Adapta ao viewport */
-        height: auto;
-    }
-
-    .newsletter .box-newsletter form {
-        padding: 0; /* Remove padding fixo */
-        text-align: center; /* Centraliza o formulário */
-    }
-    
-    .newsletter .box-newsletter textarea {
-        width: 90%; /* Ajuste responsivo */
-        max-width: 500px; /* Limita a largura máxima */
-        padding: 15px;
-        border-radius: 15px;
-        border: none;
-        outline: none;
-        color: #00000098;
-        background-color: #faefda;
-        margin: 10px auto; /* Centraliza na tela */
-        height: 60px;
-    }
-    
-    .newsletter .box-newsletter input {
-        width: 90%; /* Ajuste responsivo */
-        max-width: 500px; /* Limita a largura máxima */
-        padding: 15px;
-        border-radius: 15px;
-        border: none;
-        outline: none;
-        color: #00000098;
-        background-color: #faefda;
-        margin: 10px auto; /* Centraliza na tela */
-        height: 40px;
-    }
-    
 }
 
