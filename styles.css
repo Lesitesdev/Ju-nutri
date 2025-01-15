@@ -376,20 +376,21 @@ font-weight: 600;
     background-color:#faefda ;
     display: flex;
     margin-top: 10px;
-    height: 40px;
+    height: 4rem;
     }
 
 .newsletter .box-newsletter button {
-    font-size: 15px;
+    
+    font-size: 1rem;
     border: none;
     outline:none;
-    padding: 15px;
-    border-radius: 14px;
+    padding: 2rem;
+    border-radius: 1rem;
     color: white;
     background-color: var(--orange);
     cursor: pointer;
-    margin-right: 380px;
-    margin-top: 10px;
+    margin-right:25rem;
+    margin-top: 3rem;
 
 
 }
@@ -415,7 +416,7 @@ footer .container ul{
 }
 
 footer .container h3 {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     font-weight: 600;
 }
 
@@ -460,243 +461,150 @@ footer .container a {
 /*Responsivo*/
 
 
-@media (max-width: 360px){
+@media (max-width: 960px)
 
-    .menu-icon {
-        display: block;
-    
-    }
-
+{
+    .menu-icon {display: block;}
     .ul {
         position: fixed;
         background: var(--verde-escuro);
-        top:0;
+        top: 0;
         width: 100%;
         height: 100%;
         left: 100%;
         transition: 0.3s;
         flex-direction: column;
         justify-content: center;
-
     }
-
-    .ul li{
-        font-size: 20px;
-        margin: 20px 0;
+    .ul li {
+        font-size: 2rem;
+        margin: 2rem 0;
     }
-
-    ul.ativo{
-        left: 0;
-
-    }
-
-
-    main .container{
-        flex-direction: column;
-    }
-
-         main .container .main-img,
-         main .container .main-text{
+    ul.ativo {left: 0;}
+    main .container {flex-direction: column;}
+    main .container .main-img,
+    main .container .main-text {
         width: 100%;
         text-align: center;
     }
-
-    main .container .main-text h1{
-        font-size: 4rem;
-    }
-
-    main .container .main-text div{
-        justify-content: center;
-    }
-
-
-    .resultados .container{
-        flex-direction: column;
-    }
-
+    main .container .main-text h1 {font-size: 4rem;}
+    main .container .main-text div {justify-content: center;}
+    .resultados .container {flex-direction: column;}
     .resultados .resultados-text,
-    .resultados .resultados-numeros{
+    .resultados .resultados-numeros {
         width: 100%;
         text-align: center;
-
+    }
+    .resultados-numero {margin-top: 3rem;}
+    .diferenciais .container {flex-direction: column;}
+    .diferenciais .card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .casa .container {flex-direction: column-reverse;}
+    .casa .casa-text,
+    .casa .casa-img {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .atendimentos .cards {flex-direction: column;}
+    .atendimentos .cards .card-item {
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .newsletter .box-newsletter h2 {font-size: 2rem;}
+    .newsletter .box-newsletter input {
+        width: 90%;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    .newsletter .box-newsletter {
+        padding: 5rem;
+    }
+    .newsletter .box-newsletter button {
+        width: 50%;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    footer .container {flex-direction: column;}
+    footer .container ul {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width: 360px) {
+    body, html {
+        width: 100%;
+        overflow-x: hidden; /* Corrige conteúdo que sai da tela */
     }
 
-    .resultados-numero{
-        margin-top:30px;
-    }
-
-
-.diferenciais .container{
-    flex-direction: column;
-}
-
-.diferenciais .card{
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-
-.casa .container{
-    flex-direction: column-reverse;
-
-}
-
-.casa .casa-text,
-.casa .casa-img{
-    width: 100%;
-    text-align: center;
-    padding: 0;
-}
-
-
-.atendimentos .cards{
-    flex-direction: column;
-    
-}
-.atendimentos .cards .card-item{
-    width: 100%;
-    margin-top: 50px;
-   
-}
-
-
-.newsletter .box-newsletter h2{
-    font-size: 2rem;
-}
-
-.newsletter .box-newsletter input{
-    width: 90%;
-    margin-top: 20px;
-    margin-left: -200px;
-    
-
-    
-    
-}
-
-.newsletter .box-newsletter{
-    padding: 50px;
-}
-
-.newsletter .box-newsletter button{
-    width: 50%;
-    margin-top: 20px;
-    margin-left: -150px;
-
-}
-
-footer .container{
-    flex-direction: column;
-}
-
-footer .container ul{
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-
-
-
-
-
-
-
-}
-
-@media (max-width: 360px){
-    .resultados .resultados-numeros{
+    .resultados .resultados-numeros {
         flex-direction: column;
     }
 
-    main .container .main-text h1{
+    main .container .main-text h1 {
         font-size: 3rem;
     }
 
+    .resultados .resultados-text,
+    .resultados .resultados-numeros {
+        width: 100%;
+        text-align: center;
+    }
 
+    .resultados .container {
+        flex-direction: column;
+        gap: 4rem;
+    }
 
+    .newsletter .box-newsletter {
+        display: block;
+        padding: 2rem; /* Ajusta para caber na tela */
+    }
 
+    .newsletter .box-newsletter textarea,
+    .newsletter .box-newsletter input {
+        width: 90%; /* Ajusta largura responsiva */
+        margin: 1rem auto;
+    }
 
+    .newsletter .box-newsletter button {
+        margin: 0 auto;
+        width: 90%; /* Adapta ao viewport */
+        height: auto;
+    }
+
+    .newsletter .box-newsletter form {
+        padding: 0; /* Remove padding fixo */
+        text-align: center; /* Centraliza o formulário */
+    }
     
-       
+    .newsletter .box-newsletter textarea {
+        width: 90%; /* Ajuste responsivo */
+        max-width: 500px; /* Limita a largura máxima */
+        padding: 15px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        color: #00000098;
+        background-color: #faefda;
+        margin: 10px auto; /* Centraliza na tela */
+        height: 60px;
+    }
     
+    .newsletter .box-newsletter input {
+        width: 90%; /* Ajuste responsivo */
+        max-width: 500px; /* Limita a largura máxima */
+        padding: 15px;
+        border-radius: 15px;
+        border: none;
+        outline: none;
+        color: #00000098;
+        background-color: #faefda;
+        margin: 10px auto; /* Centraliza na tela */
+        height: 40px;
+    }
     
-        
-    
-        
-    
-    
-    
-    
-    
-            
-            
-           
-           
-        .resultados .resultados-text,
-        .resultados .resultados-numeros{
-            width: 100%;
-            text-align: center;
-           
-        }
-    
-        .resultados .container{
-            flex-direction: column;
-            gap: 40px;
-        }
-
-        .newsletter .box-newsletter {
-            display: block;
-           
-        }
-
-
-        .newsletter .box-newsletter form{
-            padding-left: 10px;
-           
-            
-           
-        }
-
-        .newsletter .box-newsletter  .input-box{
-            
-            display: block
-           
-            
-           
-            
-           
-        }
-
-        
-        .newsletter .box-newsletter  .input-box input  {
-           
-            height: 9px;
-            margin-left: 9px;}
-
-
-        
-
-        .newsletter .box-newsletter textarea{
-         width: 200px;
-         height: 90px;
-           
-           
-           }
-
-
-           .newsletter .box-newsletter button{
-            margin-left: 10px;
-            width: 200px;
-            height: 45px;
-              
-              
-              }
-
-
-
-      
-        
-
-
-
+}
 
