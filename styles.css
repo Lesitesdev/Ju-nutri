@@ -348,6 +348,21 @@ font-weight: 600;
 
 }
 
+.newsletter .box-newsletter textarea{
+    width: 35%;
+    padding: 15px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #00000098;
+    display: flex;
+    background-color:#faefda ;
+    display: flex;
+    margin-top: 10px;
+    height: 60px;
+}
+
+
 
 .newsletter .box-newsletter input {
     
@@ -599,6 +614,8 @@ footer .container ul{
 
 
 
+
+
     
        
     
@@ -627,23 +644,58 @@ footer .container ul{
             gap: 40px;
         }
 
-        .newsletter .box-newsletter input-box{
-            width: 150%;
-            margin-top: 200px;
-            margin-left: 200px;
+        .newsletter .box-newsletter {
+            display: block;
+           
+        }
+
+
+        .newsletter .box-newsletter form{
+            padding-left: 10px;
+           
             
+           
+        }
+
+        .newsletter .box-newsletter  .input-box{
+            
+            display: block
+           
+            
+           
+            
+           
+        }
+
         
-            
-            
-    
-
-    
-       
-    
-    
-    }
+        .newsletter .box-newsletter  .input-box input  {
+           
+            height: 9px;
+            margin-left: 9px;}
 
 
+        
+
+        .newsletter .box-newsletter textarea{
+         width: 200px;
+         height: 90px;
+           
+           
+           }
+
+
+           .newsletter .box-newsletter button{
+            margin-left: 10px;
+            width: 200px;
+            height: 45px;
+              
+              
+              }
+
+
+
+      
+        
 
 
 
