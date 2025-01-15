@@ -478,6 +478,17 @@ footer .container a {
     main .container {
         flex-direction: column;
     }
+
+    main h1 {
+        font-size: 6vw; /* Fonte responsiva baseada na largura da tela */
+        white-space: nowrap; /* Impede quebra de linha */
+        overflow: hidden; /* Garante que o texto não ultrapasse a área visível */
+        text-align: center; /* Centraliza o texto */
+        margin: 0 auto; /* Centraliza o elemento no container */
+        max-width: 100%; /* Garante que o h1 ocupe toda a largura disponível */
+    }
+
+
     main .container .main-img,
     main .container .main-text {
         width: 100%;
@@ -655,6 +666,16 @@ footer .container a {
 
 /* Responsividade adicional para telas menores que 576px */
 @media (max-width: 576px) {
+
+
+    main .container .main-text h1 {
+        font-size: 5vw !important; /* Ajusta o tamanho da fonte */
+        white-space: normal; /* Permite a quebra de linhas */
+        word-wrap: break-word; /* Garante a quebra de palavras longas, se necessário */
+        text-align: center; /* Opcional: Centraliza o texto */
+        line-height: 1.2; /* Ajusta o espaçamento entre as linhas */
+    }
+   
     .newsletter .box-newsletter {
         padding: 1rem;
     }
